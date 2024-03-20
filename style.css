@@ -1,0 +1,129 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* # Colors */
+
+  /* ## Primary */
+
+  --Yellow: hsl(47, 88%, 63%);
+
+  /* ## Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* Fonts */
+
+  --main_font: "Figtree", sans-serif;
+}
+
+/* CSS reset */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {  /* Improve media defaults */
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 { /* Avoid text overflows */
+  overflow-wrap: break-word;
+}
+
+/* attribution styling */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* document styling */
+
+body {
+  height: 100vh;
+  background-color: var(--Yellow);
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  background-color: var(--White);
+  border: 1px solid var(--Black);
+  border-radius: .75rem;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 4px var(--Black);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  font-family: var(--main_font);
+  max-width: 375px;
+}
+
+.container:hover {
+  box-shadow: 12px 12px 4px var(--Black);
+}
+
+.main_img {
+  border-radius: .75rem;
+}
+
+.tag {
+  background-color: var(--Yellow);
+  padding: .5rem;
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+.date {
+  font-size: .75rem;
+}
+
+.main_heading {
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+
+.main_heading:hover{
+  cursor: pointer;
+  color: var(--Yellow);
+}
+
+.summary {
+  color: var(--Grey);
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.author_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 30px;
+  height: auto;
+}
+
+.author_name {
+  font-weight: 800;
+  font-size: .875rem;
+}
